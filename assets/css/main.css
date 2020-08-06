@@ -2531,7 +2531,7 @@ input, select, textarea {
 
 	#header {
 		text-align: center;
-		padding: 3em 0 0 0;
+		padding: 0;
 		background-color: #fff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
@@ -2693,22 +2693,22 @@ input, select, textarea {
 			padding: 1.5em 0;
 		}
 
-			#banner header h2 {
+			#banner header h1 {
 				display: inline-block;
 				margin: 0;
 				font-size: 1.25em;
 				vertical-align: middle;
 			}
 
-				#banner header h2 em {
+				#banner header h1 em {
 					opacity: 0.75;
 				}
 
-				#banner header h2 a {
+				#banner header h1 a {
 					border-bottom-color: rgba(255, 255, 255, 0.5);
 				}
 
-					#banner header h2 a:hover {
+					#banner header h1 a:hover {
 						border-bottom-color: transparent;
 					}
 
