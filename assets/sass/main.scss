@@ -781,6 +781,7 @@
 		h1 {
 			padding: 0;
 			margin: 0;
+			display: none;
 
 			a {
 				font-size: 1.5em;
@@ -914,7 +915,7 @@
 /* Banner */
 
 	#banner {
-		background-image: url('../../images/banner.jpg');
+		background-image: url('../../images/fondo_herramientas.jpg');
 		background-position: center center;
 		background-size: cover;
 		height: 28em;
@@ -963,7 +964,27 @@
 		padding: 5em 0 3em 0;
 
 		&.style1 {
-			background: #fff;
+			//background: #fff;
+			background-image: url('../../images/fondo_herramientas.jpg');
+			background-attachment: fixed;
+			background-position: center;
+		  background-repeat: no-repeat;
+		  background-size: cover;
+		  position: relative;
+
+			.container{
+				.row{
+					.modify-col{
+						padding: 20px;
+					}
+					.background-style{
+						background-color: #dedede;
+						//background-color: #f3f3f3; //asi esta el footer
+						border-radius: 13px;
+						opacity: 0.98;
+					}
+				}
+			}
 		}
 
 		&.style2 {
@@ -1064,7 +1085,7 @@
 		/* Banner */
 
 			#banner {
-				height: 24em;
+				height: 29em;
 			}
 
 	}
