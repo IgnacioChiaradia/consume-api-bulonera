@@ -1,2 +1,2 @@
 # consume-api-bulonera
-html + js consumiran api de bulonera
+html + css + js consumiran api de bulonera
