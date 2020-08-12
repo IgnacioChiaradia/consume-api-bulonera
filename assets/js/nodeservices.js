@@ -1,17 +1,23 @@
-const API_URL = `192.168.1.37:8080/register/`;
+const API_URL = `http://localhost:8080/register/`;
 
-const register = () => {
+const register = (form) => {
+      //let name = document.querySelector('#name');
+      //console.log("NAMEEE",name.value);
+
+      console.log("confirmacion_contrasenia",$("#password_confirm").val());
+      let password_confirm = $("#password_confirm").val();
+
       fetch(API_URL,{
         headers: {
           'Content-Type': 'application/json',
         },
         body:JSON.stringify({
-          name: "David",
-          surname: "Navarro",
-          email: "vidasda95el@hotmail.com",
-          password: "123",
-          direction: "Padrae Duttso 1988",
-          telephone: "32564"
+          name: $("#name").val(),
+          surname: $("#surname").val(),
+          email: $("#email").val(), //recordar cambiar para probar (dato unico)
+          password: $("#password").val(),
+          direction: $("#direction").val(),
+          telephone: $("#telephone").val() //recordar cambiar para probar (dato unico)
         }),
         method: 'POST'
       })
